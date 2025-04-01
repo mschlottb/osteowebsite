@@ -7,19 +7,19 @@
   <style>
     body { margin: 0; font-family: sans-serif; background-color: #f7f9fb; color: #2c3e50; }
     header {
-      background-color: #e8f0f5;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem 2rem;
+      position: relative;
+      height: 160px;
+      background-image: url('banner.png');
+      background-size: cover;
+      background-position: center;
     }
-    header img.logo {
+    .logo-container {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+    }
+    .logo-container img {
       height: 60px;
-    }
-    header img.banner {
-      height: 100px;
-      object-fit: cover;
-      margin-left: auto;
     }
     nav {
       background-color: #4a6c8a;
@@ -60,8 +60,9 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="OSTEO Logo" class="logo">
-    <img src="banner.png" alt="Banner Image" class="banner">
+    <div class="logo-container">
+      <img src="logo.png" alt="OSTEO Logo">
+    </div>
   </header>
 
   <nav>
